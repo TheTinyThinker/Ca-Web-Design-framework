@@ -1,0 +1,57 @@
+@import "../node_modules/bootstrap/scss/functions";
+//Globals
+$enable-rounded: false;
+//$enable-shadows: true;
+
+//Theme Colours
+
+$primary:    rgb(199, 81, 106);
+$secondary:  rgb(13, 13, 75);
+$success:    rgb(218, 32, 32);
+$info:       rgb(136, 83, 83);
+$warning:    rgb(255, 217, 0);
+$danger:     rgb(121, 49, 65);
+$light:      rgb(255, 255, 255);
+$dark:       rgba(153, 111, 155, 0.788);
+
+//$primary: rgb(0, 255, 98);
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Custom Colours
+
+$custom-colors: (
+    "primary-light": rgb(86, 86, 88),
+    "secondary-light": rgb(95, 95, 99),
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors );
+
+// @each $key, $val in $colors {
+//     .bg-#{$color} {
+//         background-color: $val;
+//     }
+
+//     .bg-#{$color}-light {
+//         background-color: tint-color($val, 60%);
+//     }
+// }
+
+//Spacers
+$spacer: 1rem !default;
+$spacer: (
+    0: 0,
+    1: $spacer * 0.1,
+    2: $spacer * 0.33,
+    3: $spacer,
+    4: $spacer * 0.2,
+    5: $spacer * 0.3,
+    6: $spacer * 0.4,
+    7: $spacer * 0.5,
+    8: $spacer * 0.6,
+    
+)!default;
+
+// Import BootStrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
