@@ -70,6 +70,28 @@ $spacer: (
     padding-top: ($spacer * .5) !important;
 }
 
+.imageCardSize{
+  height: 280px;
+}
+
+.card {
+  height: 100%;
+}
+
+.imgCardSize {
+  height: 150px; /* Set a fixed height for images within cards */
+  object-fit: cover;
+}
+
+hr.custom-hr {
+  height: 40px; /* Increase the thickness of the line */
+  background-color: #C0C999; /* Set the color of the line */
+}
+
+.list-group-item.no-colour{
+  background-color: rgb(151, 151, 80);
+}
+
 .p-5 {
     padding: 3rem !important;
   }
