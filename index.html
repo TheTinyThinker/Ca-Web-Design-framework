@@ -16,122 +16,124 @@
 <body class="bg-delibackground">
 	<nav class="navbar navbar-expand-lg navbar-light bg-primary">
 		<div class="container-fluid">
-			<div class="container-fluid">
-				<a class="navbar-brand col-3 " href="#"><img src="./images/NavBarLogo.png" class="rounded float-start"
-						alt="NavBarLogo"></a>
+			<a class="navbar-brand col-3 p-0" href="#"><img src="./images/NavBarLogo.png" class="rounded float-start"
+					alt="NavBarLogo"></a>
 
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav col-6 gap-5">
-						<li class="nav-item"><a class="nav-link text-white mx-2" href="#">Online Shop</a></li>
-						<li class="nav-item"><a class="nav-link text-white mx-2" href="#">Menu</a></li>
-						<li class="nav-item"><a class="nav-link text-white mx-2" href="#">Our Stores</a></li>
-						<li class="nav-item"><a class="nav-link text-white mx-2" href="#">Catering</a></li>
-						<li class="nav-item"><a class="nav-link text-white mx-2" href="#">Contact Us</a></li>
-						<li class="nav-item"><a class="nav-link text-white mx-2" href="#"><img src="./images/cart.svg"
-									class="rounded float-start" alt="CartLogo"></a></li>
-					</ul>
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="#">
-								<i class="fas fa-bell"></i>
-								<!-- Example bell icon from Font Awesome -->
-							</a>
-						</li>
-					</ul>
-					<div class="d-flex">
-						<button class="btn btn-success rounded me-2 px-5 text-center" type="button">
-							<p class="m-0">Sign up</p>
-						</button>
-						<button class="btn btn-success rounded me-2 px-5 text-center" type="button">
-							<p class="m-0">Log in</p>
-						</button>
-					</div>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<!-- Use d-flex class to align items on small screens -->
+					<li class="nav-item"><a class="px-md-4 nav-link text-white " href="#">Online Shop</a></li>
+					<li class="nav-item"><a class=" px-md-4 nav-link text-white" href="menu.html">Menu</a></li>
+					<li class="nav-item"><a class=" px-md-4 nav-link text-white" href="#">Our Stores</a></li>
+					<li class="nav-item"><a class="px-md-4 nav-link text-white" href="#">Catering</a></li>
+					<li class="nav-item"><a class=" px-md-4 nav-link text-white" href="#">Contact Us</a></li>
+					<li class="nav-item"><a class=" px-md-4 nav-link text-white" href="basket.html"><img
+								src="./images/cart.svg" class="rounded float-start" alt="CartLogo"></a></li>
+				</ul>
+
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fas fa-bell"></i>
+							<!-- Example bell icon from Font Awesome -->
+						</a>
+					</li>
+				</ul>
+
+				<div class="d-flex">
+					<!-- Add responsive classes to make buttons stack on small screens -->
+					<button class="btn btn-success rounded me-2 px-4 py-1 text-center" type="button">
+						<p class="m-0">Sign up</p>
+					</button>
+					<button class="btn btn-success rounded me-2 px-4 py-1 text-center" type="button">
+						<p class="m-0">Log in</p>
+					</button>
 				</div>
 			</div>
 		</div>
 	</nav>
 	<main id="main">
-		<div class="container-fluid my-bg text-white">
+		<div class="container-fluid my-bg text-white d-flex align-items-center justify-content-center">
 			<div class="text-center p-9">
 				<h1>Welcome to GreenVille</h1>
-				<p>mply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-					standard dummy
-					.
-					has context menu</p>
-				<p><button class="btn btn-outline-success me-2 px-4 text-white p-2" type="button">View Menu</button>
-				</p>
+				<div class="row">
+					<div class="col-md-12">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+							been the industry's
+							standard dummy text ever since the 1500s.</p>
+					</div>
+				</div>
+				<p><button class="btn btn-outline-success me-2 px-4 text-white p-2" type="button">View Menu</button></p>
 			</div>
 		</div>
 
+		<!-- what popular section -->
 		<div class="container mt-5">
-			<hr class="my-4 hr greenbar border-5 opacity-100 "> <!-- Apply the custom style to the line -->
+			<hr class="my-md-3   custom-hr  rounded opacity-100 "> <!-- Apply the custom style to the line -->
 			<h2 class="text-center text-white pb-4">What's Popular</h2>
 
 			<div class="row">
-				<!-- Card 1 -->
-				<div class="col-md-3">
-					<div class="text-center card rounded mx-2">
-						<img src="./images/image 1.png" class="card-img-top img-fluid" alt="Image 1">
-						<div class="card-body">
-							<h5 class="card-title">Product 1</h5>
-							<p class="card-text">Description of Product 1.</p>
-							<p class="card-text">$19.99</p>
-							<!-- Add other text here -->
-						</div>
-					</div>
-				</div>
-
-				<!-- Card 2 -->
-				<div class="col-md-3">
+				<!-- Sandwich Card -->
+				<div class="col-md-3 my-2">
 					<div class="card text-center rounded mx-2">
-						<img src="./images/Mask group.png " class="card-img-top " alt="Image 2">
+						<img src="./images/sandwhich1.png" class="card-img-top " alt="Fried Eggs">
 						<div class="card-body">
-							<h5 class="card-title">Product 2</h5>
-							<p class="card-text">Description of Product 2.</p>
-							<p class="card-text">$29.99</p>
-							<!-- Add other text here -->
+							<p class="card-text price-text">$9.99</p>
+							<h5 class="card-title">Fried Eggs</h5>
+							<p class="card-text">Made with egg, lettuce, salt, oil and other ingredients.</p>
 						</div>
 					</div>
 				</div>
 
-				<!-- Card 3 -->
-				<div class="col-md-3">
+
+				<!-- Hawaiian Pizza Card -->
+				<div class="col-md-3 my-2">
 					<div class="card text-center rounded mx-2">
-						<img src="./images/image 3.png" class="card-img-top " alt="Image 3">
+						<img src="./images/sandwhich2.png" class="card-img-top " alt="Hawaiian Pizza">
 						<div class="card-body">
-							<h5 class="card-title">Product 3</h5>
-							<p class="card-text">Description of Product 3.</p>
-							<p class="card-text">$39.99</p>
-							<!-- Add other text here -->
+							<p class="card-text price-text">$15.99</p>
+							<h5 class="card-title">Hawaiian Pizza</h5>
+							<p class="card-text">Made with egg, lettuce, salt, oil and other ingredients.</p>
 						</div>
 					</div>
 				</div>
 
-				<!-- Card 4 -->
-				<div class="col-md-3">
+				<!-- Martinez Cocktail Card -->
+				<div class="col-md-3 my-2">
 					<div class="card text-center rounded mx-2">
-						<img src="./images/image 4.png" style="width: 100%; height: 200px;" class=" card-img-top   "
-							alt="Image 4">
+						<img src="./images/sandwhcih3.png" class="card-img-top " alt="Martinez Cocktail">
 						<div class="card-body">
-							<h5 class="card-title">Product 4</h5>
-							<p class="card-text">Description of Product 4.</p>
-							<p class="card-text">$49.99</p>
-							<!-- Add other text here -->
+							<p class="card-text price-text">$7.25</p>
+							<h5 class="card-title">Martinez Cocktail</h5>
+							<p class="card-text">Made with egg, lettuce, salt, oil and other ingredients.</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="container d-flex justify-content-center align-items-center pt-3">
-					<p>
-						<button class="btn btn-outline-success text-white px-4 p-2" type="button">View Menu</button>
-					</p>
+				<!-- Butterscotch Cake Card -->
+				<div class="col-md-3 my-2">
+					<div class="card text-center rounded mx-2">
+						<img src="./images/sandwhich4.png" class="card-img-top " alt="Butterscotch Cake">
+						<div class="card-body">
+							<p class="card-text price-text">$20.99</p>
+							<h5 class="card-title">Butterscotch Cake</h5>
+							<p class="card-text">Made with egg, lettuce, salt, oil and other ingredients.</p>
+						</div>
+					</div>
 				</div>
 			</div>
+
+			<div class="container d-flex justify-content-center align-items-center pt-3">
+				<p>
+					<button class="btn btn-outline-success text-white px-4 p-2" type="button">View Menu</button>
+				</p>
+			</div>
+		</div>
 		</div>
 
 		<div class="container mt-5">
@@ -169,48 +171,64 @@
 						</div>
 					</div>
 
-					<div class="row mt-3">
-						<!-- 2x2 grid with small boxes -->
-						<div class="col-md-3">
-							<button class="btn  btn-outline-success me-2 px-5 mx-5text-center text-white" type="button">
-								<p class="m-0">fresh food</p>
-							</button>
-						</div>
-
-						<div class="col-md-3">
-							<button class="btn  btn-outline-success me-2 px-5 mx-5text-center text-white" type="button">
-								<p class="m-0">fast Delivery</p>
-							</button>
-						</div>
-
-						<div class="col-md-3">
-							<button class="btn  btn-outline-success me-2 px-5 mx-5text-center text-white" type="button">
-								<p class="m-0">Quality</p>
-							</button>
-						</div>
-
-						<div class="col-md-3">
-							<button class="btn  btn-outline-success me-2 px-5 mx-5text-center text-white" type="button">
-								<p class="m-0">24/7 service</p>
-							</button>
+					<div class="container mt-3">
+						<div class="row">
+							<div class="col-md-8 offset-md-2">
+								<div class="row">
+									<div class="col-md-6">
+										<ul class="list-unstyled custom-list">
+											<li class="d-flex align-items-center custom-list-item">
+												<img src="./images/food icon.svg" class="img-fluid" alt="Image">
+												<div class="text-container">
+													<p class="m-0 text-white">Fresh Food</p>
+												</div>
+											</li>
+											<li class="d-flex align-items-center custom-list-item">
+												<img src="./images/check icon.svg" class="img-fluid" alt="Image">
+												<div class="text-container">
+													<p class="m-0 text-white">Fast Delivery</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="col-md-6">
+										<ul class="list-unstyled custom-list">
+											<li class="d-flex align-items-center custom-list-item">
+												<img src="./images/truck icon.svg" class="img-fluid" alt="Image">
+												<div class="text-container">
+													<p class="m-0 text-white">Quality</p>
+												</div>
+											</li>
+											<li class="d-flex align-items-center custom-list-item">
+												<img src="./images/clock icon.svg" class="img-fluid" alt="Image">
+												<div class="text-container">
+													<p class="m-0 text-white">24/7 Service</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
 		</div>
 		<div class="container-xl mt-5">
-			<div class="row">
+			<div class="row d-flex">
 				<!-- Left side with images -->
+
 				<div class="col-md-8 d-flex flex-row-revers">
 					<img src="./images/ChefMakingFood.png" class="img-fluid mb-3" alt="Image 1">
 
-					<div class="col-md-4">
-						<img src="./images/CurryImage.png" class="img-fluid mx-3 mt-4" alt="Image 2">
-						<img src="./images/RoastDinner.png" class="img-fluid mx-3 mt-4" alt="Image 3">
+					<div class="col-md-4 ">
+						<img src="./images/CurryImage.png" class=" img-fluid mx-3 mt-4" alt="Image 2">
+						<img src="./images/RoastDinner.png" class=" img-fluid mx-3 mt-4" alt="Image 3">
 					</div>
-
 				</div>
+
 
 				<!-- Right side with text, list, and button -->
 				<div class="col-md-4">
@@ -236,48 +254,93 @@
 			</div>
 		</div>
 
-		<div class="container text-center mt-5"> <!-- Small title with border on top and bottom -->
-			<h4 class="border-top border-bottom py-2">Customer Comments</h4> <!-- Larger title -->
-			<h2 class="mt-4">What our customers say</h2> <!-- Subtitle -->
-			<p class="lead">We love to hear from customers, so please leave a comment or say hello in an email.</p>
-			<!-- Comment Cards -->
-			<div class="row mt-4"> <!-- Comment Card 1 -->
+		<div class="container my-5">
+			<!-- Section Title -->
+			<h2 class="text-center mb-4 text-white">Greenville Gram</h2>
+		
+			<!-- Images Row -->
+			<div class="row">
 				<div class="col-md-4 mb-4">
-					<div class="card"> <img src="customer1.jpg" class="card-img-top" alt="Customer 1">
-						<div class="card-body">
-							<h5 class="card-title">John Doe</h5>
-							<h6 class="card-subtitle mb-2 text-muted">New York, USA</h6>
-							<p class="card-text">"Great service! I'm impressed with the quality and speed of delivery.
-								Will order again."</p>
+					<img src="./images/insta42.jpg" class="img-fluid same-size-img" alt="Greenville Image 1">
+				</div>
+				<div class="col-md-4 mb-4">
+					<img src="./images/insta32.jpg" class="img-fluid same-size-img" alt="Greenville Image 2">
+				</div>
+				<div class="col-md-4 mb-4">
+					<img src="./images/insta22.jpg" class="img-fluid same-size-img" alt="Greenville Image 3">
+				</div>
+			</div>
+		
+			<!-- Buttons -->
+			<div class="text-center mt-4">
+				<button class="btn btn-success me-2">Load More</button>
+				<button class="btn btn-outline-primary">Follow</button>
+			</div>
+		</div>
+		</div>
+
+		<footer>
+			<div class="container-fluid bg-primary">
+				<div class="container text-center">
+					<img src="/images/NavBarLogo.png" alt="Logo" class="logo pt-4">
+
+					<div class="row">
+						<div class="col-md-6 text-left footer-text text-white">
+							<p>Instagram Feed</p>
+						</div>
+						<div class="col-md-6 text-right social-logos">
+							<img src="/images/Insta.png" alt="Instagram">
+							<img src="/images/Fb.png" alt="Facebook">
+							<img src="/images/Twiter.png" alt="Twitter">
+							<img src="/images/Pintrest.png" alt="Pinterest">
 						</div>
 					</div>
-				</div> <!-- Comment Card 2 -->
-				<div class="col-md-4 mb-4">
-					<div class="card"> <img src="customer2.jpg" class="card-img-top" alt="Customer 2">
-						<div class="card-body">
-							<h5 class="card-title">Jane Smith</h5>
-							<h6 class="card-subtitle mb-2 text-muted">London, UK</h6>
-							<p class="card-text">"Excellent customer service! The team was very helpful in answering my
-								queries."</p>
+
+					<div class="row">
+						<div class="col-md-4 contact-section text-white text-center ">
+							<div class="col-md-12 text-center mx-5 ">
+								<div class="col-md-2 text-center mx-5 ">
+									<p class=" border-top border-bottom">Contact</p>
+								</div>
+							</div>
+							<p>Phone: 123-456-7890</p>
+							<p>Address: 123 Main St, City</p>
 						</div>
-					</div>
-				</div> <!-- Comment Card 3 -->
-				<div class="col-md-4 mb-4">
-					<div class="card"> <img src="customer3.jpg" class="card-img-top" alt="Customer 3">
-						<div class="card-body">
-							<h5 class="card-title">Alex Johnson</h5>
-							<h6 class="card-subtitle mb-2 text-muted">Sydney, Australia</h6>
-							<p class="card-text">"Lovely experience! Fast shipping and great product quality. Highly
-								recommended."</p>
+						<div class="col-md-4 mailing-list-section text-white">
+							<p> Join our mailing list for updates,
+								Get news & offers events.</p>
+							<div class="input-group">
+								<input type="email" class=" text-white py-2 bg-greenbar form-control"
+									placeholder="Enter your email">
+								<button class="btn btn-success  px-4">Subscribe</button>
+							</div>
+						</div>
+						<div class="col-md-4 working-hours-section text-white ">
+							<div class="col-md-12  mx-5">
+								<div class="col-md-12  mx-5">
+									<div class="col-md-4  mx-5">
+										<p class="border-top border-bottom">Working Hours</p>
+									</div>
+								</div>
+							</div>
+							<ul class=" pe-5">
+								<ul class="list-unstyled text-end pe-5">
+									<li>Monday - Friday: 7am - 9pm</li>
+									<li>Sat: 7am - 9pm</li>
+									<li>Sun: 7am - 9pm</li>
+								</ul>
+							</ul>
 						</div>
 					</div>
 				</div>
-			</div> 
+			</div>
+		</footer>
 	</main>
 
 	<!-- Bootstrap JS bundle (Popper.js and Bootstrap JS) -->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

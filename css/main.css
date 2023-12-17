@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.custom-hr {
+  border-color: rgb(191, 201, 153);
+}
+
+.price-text {
+  color: rgb(129, 38, 20); /* This will set the text color to red */
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -216,7 +224,7 @@ body {
 
 hr {
   margin: 1rem 0;
-  color: inherit;
+  color: rgb(191, 201, 153);
   border: 0;
   border-top: var(--bs-border-width) solid;
   opacity: 0.25;
@@ -12081,7 +12089,11 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 530px;
+  height: 33rem;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "Kurale", serif;
 }
 
 .pTitleHeader {
@@ -12089,24 +12101,159 @@ textarea.form-control-lg {
 }
 
 .imageCardSize {
-  height: 280px;
+  height: 18rem;
 }
 
-.card {
+.same-size-img {
+  width: 100%; /* This makes the image responsive and fills the width of its parent container */
+  height: 28rem; /* Adjust the height as necessary */
+  -o-object-fit: cover;
+     object-fit: cover; /* This makes the image cover the area, cropping it if necessary without distorting */
+}
+
+.cardl {
   height: 100%;
 }
 
 .imgCardSize {
-  height: 150px; /* Set a fixed height for images within cards */
+  height: 10rem; /* Set a fixed height for images within cards */
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-hr.custom-hr {
-  height: 40px; /* Increase the thickness of the line */
+.custom-hr {
+  height: 1rem; /* Increase the thickness of the line */
   background-color: #C0C999; /* Set the color of the line */
+  border-top: none; /* Remove the top border */
 }
 
+.custom-list-item {
+  padding: 10px; /* Adjust the padding for better spacing */
+  margin-bottom: 10px; /* Adjust the margin between items */
+}
+
+.text-container {
+  margin-left: 1rem; /* Adjust the margin between the image and text */
+}
+
+@media (max-width: 48rem) {
+  .custom-list-item {
+    height: auto; /* Make the height auto for responsiveness on smaller screens */
+  }
+}
 .list-group-item.no-colour {
   background-color: rgb(151, 151, 80);
+}
+
+.contact-section {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.mailing-list-section {
+  margin-bottom: 20px;
+}
+
+.working-hours-section {
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  margin-bottom: 20px;
+}
+
+.social-logos img {
+  max-width: 2rem;
+  margin: 0 5px;
+}
+
+.contact-section,
+.mailing-list-section,
+.working-hours-section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-section h5, .contact-section .h5,
+.mailing-list-section h5,
+.mailing-list-section .h5,
+.working-hours-section h5,
+.working-hours-section .h5 {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.mailing-list-section input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.mailing-list-section .form-control::-moz-placeholder {
+  color: white; /* Change the placeholder text color to white */
+}
+
+.mailing-list-section .form-control::placeholder {
+  color: white; /* Change the placeholder text color to white */
+}
+
+.mailing-list-section .form-control {
+  border-color: rgb(80, 93, 100); /* Change the border color to white */
+}
+
+/* Remove dots from the list items */
+.working-hours-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+}
+.custom-list li {
+  border: 2px solid rgb(129, 38, 20);
+  margin-bottom: 10px; /* Adjust the spacing as needed */
+  padding: 10px; /* Add padding for better visual appearance */
+}
+
+.page-title {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: 1px solid #ffffff; /* Set the initial border color */
+  border-radius: 25px; /* Add rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: rgb(129, 38, 20); /* Change the background color on hover */
+  color: #ffffff; /* Change the text color on hover */
 }/*# sourceMappingURL=main.css.map */

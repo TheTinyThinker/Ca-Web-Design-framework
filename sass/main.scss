@@ -31,15 +31,16 @@ $custom-colors: (
 
 $theme-colors: map-merge($theme-colors, $custom-colors );
 
-// @each $key, $val in $colors {
-//     .bg-#{$color} {
-//         background-color: $val;
-//     }
+// Access the color from the map
+$hr-color: map-get($custom-colors, "greenbar");
 
-//     .bg-#{$color}-light {
-//         background-color: tint-color($val, 60%);
-//     }
-// }
+.custom-hr {
+  border-color: $hr-color;
+}
+
+.price-text {
+  color:$success; /* This will set the text color to red */
+}
 
 //Spacers
 $spacer: 1rem !default;
@@ -64,7 +65,11 @@ $spacer: (
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 530px;
+    height: 33rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kurale', serif;
 }
 
 .pTitleHeader{
@@ -72,45 +77,163 @@ $spacer: (
 }
 
 .imageCardSize{
-  height: 280px;
+  height: 18rem;
 }
 
-.card {
+.same-size-img {
+  width: 100%; /* This makes the image responsive and fills the width of its parent container */
+  height: 28rem; /* Adjust the height as necessary */
+  object-fit: cover; /* This makes the image cover the area, cropping it if necessary without distorting */
+}
+
+.cardl {
   height: 100%;
 }
 
 .imgCardSize {
-  height: 150px; /* Set a fixed height for images within cards */
+  height: 10rem; /* Set a fixed height for images within cards */
   object-fit: cover;
 }
 
-
-
-hr.custom-hr {
-  height: 40px; /* Increase the thickness of the line */
+.custom-hr {
+  height: 1rem; /* Increase the thickness of the line */
   background-color: #C0C999; /* Set the color of the line */
+  border-top: none; /* Remove the top border */
 }
+
+.custom-list-item {
+
+  padding: 10px; /* Adjust the padding for better spacing */
+  margin-bottom: 10px; /* Adjust the margin between items */
+
+}
+
+.text-container {
+  margin-left: 1rem; /* Adjust the margin between the image and text */
+}
+
+@media (max-width: 48rem) {
+  .custom-list-item {
+      height: auto; /* Make the height auto for responsiveness on smaller screens */
+  }
+}
+
 
 .list-group-item.no-colour{
   background-color: rgb(151, 151, 80);
 }
 
-// .p-5 {
-//     padding: 3rem !important;
-//   }
+.contact-section {
+  //border: 1px solid #ced4da;
+  padding: 10px;
+  margin-bottom: 20px;
+}
 
-//   .p-6 {
-//     padding: 4.5rem !important;
-//   }
+.mailing-list-section {
+  margin-bottom: 20px;
+}
 
-//   .p-7 {
-//     padding: 6rem !important;
-//   }
+.working-hours-section {
+ // border: 1px solid #ced4da;
+  padding: 10px;
+}
 
-//   .p-8 {
-//     padding: 7.5rem !important;
-//   }
+body {
+  margin: 0;
+  padding: 0;
+}
 
-//   .p-9 {
-//     padding: 9rem !important;
-//   }
+footer {
+
+  text-align: center;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  margin-bottom: 20px;
+}
+
+.social-logos img {
+  max-width: 2rem;
+  margin: 0 5px;
+}
+
+.contact-section,
+.mailing-list-section,
+.working-hours-section {
+  //border: 1px solid #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-section h5,
+.mailing-list-section h5,
+.working-hours-section h5 {
+ // border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.mailing-list-section input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.mailing-list-section .form-control::placeholder {
+  color: white; /* Change the placeholder text color to white */
+}
+
+.mailing-list-section .form-control {
+  border-color: rgb(80, 93, 100); /* Change the border color to white */
+}
+
+
+
+/* Remove dots from the list items */
+.working-hours-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    border: 2px solid $success;
+    margin-bottom: 10px; /* Adjust the spacing as needed */
+    padding: 10px; /* Add padding for better visual appearance */
+  }
+}
+
+.page-title {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: 1px solid #ffffff; /* Set the initial border color */
+  border-radius: 25px; /* Add rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: $success; /* Change the background color on hover */
+  color: #ffffff; /* Change the text color on hover */
+}
