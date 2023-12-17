@@ -12085,7 +12085,7 @@ textarea.form-control-lg {
   }
 }
 .my-bg {
-  background-image: url(/images/HeaderImage.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/images/HeaderImage.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -12096,12 +12096,38 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Kurale", serif;
 }
 
+h1, .h1 {
+  font-size: 100px;
+}
+
+h2, .h2 {
+  font-size: 4rem;
+}
+
+.navbar-custom-font {
+  font-family: "Kurale", serif; /* Use your chosen font */
+}
+
 .pTitleHeader {
   padding-top: 0.5rem !important;
 }
 
 .imageCardSize {
   height: 18rem;
+}
+
+.darken-image {
+  position: relative;
+}
+
+.darken-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity to increase or decrease darkness */
 }
 
 .same-size-img {

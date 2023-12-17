@@ -60,17 +60,37 @@ $spacer: (
 // Import BootStrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-.my-bg{
-    background-image: url(/images/HeaderImage.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 33rem;
+.my-bg {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.1), // Adjust opacity here
+      rgba(0, 0, 0, 0.1)
+  ), url(/images/HeaderImage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 33rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Kurale', serif;
 }
+
+h1{
+
+  font-size: 100px;
+
+}
+
+h2{
+  font-size: 4rem;
+ 
+}
+
+.navbar-custom-font {
+  font-family: 'Kurale', serif; /* Use your chosen font */
+}
+
+
 
 .pTitleHeader{
     padding-top: ($spacer * .5) !important;
@@ -78,6 +98,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .imageCardSize{
   height: 18rem;
+}
+
+
+.darken-image {
+    position: relative;
+}
+
+.darken-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity to increase or decrease darkness */
 }
 
 .same-size-img {
